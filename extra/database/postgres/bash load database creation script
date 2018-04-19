@@ -1,0 +1,7 @@
+###Data Base Creation
+su - postgres
+psql
+\i /home/jcorvi/limtox_pgsql.sql
+
+
+

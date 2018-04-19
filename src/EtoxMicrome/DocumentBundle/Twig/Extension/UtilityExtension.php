@@ -6,7 +6,7 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 use EtoxMicrome\Entity2DocumentBundle\Entity\Entity2Document;
 use EtoxMicrome\DocumentBundle\Entity\DocumentWithCompound;
 use Twig_Extension;
-use Twig_Filter_Method;
+use Twig_SimpleFilter;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class UtilityExtension extends \Twig_Extension
@@ -20,21 +20,39 @@ class UtilityExtension extends \Twig_Extension
         $this->generator = $generator;
     }
 
+   /* public function getFilters()
+    {
+        return array(
+            'highlightEntitiesDocuments' => new \Twig_SimpleFilter($this, 'highlightEntitiesDocuments'),
+            'highlightEntitiesDocumentsKeywords' => new \Twig_SimpleFilter($this, 'highlightEntitiesDocumentsKeywords'),
+            'highlightEntitiesAbstracts' => new \Twig_SimpleFilter($this, 'highlightEntitiesAbstracts'),
+            'highlightGenesAbstracts' => new \Twig_SimpleFilter($this, 'highlightGenesAbstracts'),
+            'highlightKeywordText' => new \Twig_SimpleFilter($this, 'highlightKeywordText'),
+            'colorCodingScore' => new \Twig_SimpleFilter($this, 'colorCodingScore'),
+            'setCurationHtml' => new \Twig_SimpleFilter($this, 'setCurationHtml'),
+            'highlightRelations' => new \Twig_SimpleFilter($this, 'highlightRelations'),
+            'getScoreToShow' => new \Twig_SimpleFilter($this, 'getScoreToShow'),
+            'getScoreToShowRelations' => new \Twig_SimpleFilter($this, 'getScoreToShowRelations'),
+            'getOrderToSource' => new \Twig_SimpleFilter($this, 'getOrderToSource'),
+
+        );
+    }*/
+    
     public function getFilters()
     {
         return array(
-        'highlightEntitiesDocuments' => new \Twig_Filter_Method($this, 'highlightEntitiesDocuments'),
-        'highlightEntitiesDocumentsKeywords' => new \Twig_Filter_Method($this, 'highlightEntitiesDocumentsKeywords'),
-        'highlightEntitiesAbstracts' => new \Twig_Filter_Method($this, 'highlightEntitiesAbstracts'),
-        'highlightGenesAbstracts' => new \Twig_Filter_Method($this, 'highlightGenesAbstracts'),
-        'highlightKeywordText' => new \Twig_Filter_Method($this, 'highlightKeywordText'),
-        'colorCodingScore' => new \Twig_Filter_Method($this, 'colorCodingScore'),
-        'setCurationHtml' => new \Twig_Filter_Method($this, 'setCurationHtml'),
-        'highlightRelations' => new \Twig_Filter_Method($this, 'highlightRelations'),
-        'getScoreToShow' => new \Twig_Filter_Method($this, 'getScoreToShow'),
-        'getScoreToShowRelations' => new \Twig_Filter_Method($this, 'getScoreToShowRelations'),
-        'getOrderToSource' => new \Twig_Filter_Method($this, 'getOrderToSource'),
-
+            'highlightEntitiesDocuments' => new \Twig_SimpleFilter('highlightEntitiesDocuments' , $this),
+            'highlightEntitiesDocumentsKeywords' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'highlightEntitiesAbstracts' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'highlightGenesAbstracts' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'highlightKeywordText' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'colorCodingScore' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'setCurationHtml' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'highlightRelations' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'getScoreToShow' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'getScoreToShowRelations' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'getOrderToSource' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            
         );
     }
 

@@ -23,7 +23,7 @@ class Document
 
     /**
      *
-     * @ORM\Column(name="kind", type="string", columnDefinition="ENUM('pubmed', 'epar', 'nda', 'fulltext')" )
+     * @ORM\Column(name="kind", type="string", columnDefinition="enum('pubmed', 'epar', 'nda', 'fulltext')" )
      */
     private $kind;
 
