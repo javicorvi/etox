@@ -20,6 +20,11 @@ class UtilityExtension extends \Twig_Extension
         $this->generator = $generator;
     }
 
+    public function __invoke()
+    {
+        
+    }
+    
    /* public function getFilters()
     {
         return array(
@@ -42,16 +47,16 @@ class UtilityExtension extends \Twig_Extension
     {
         return array(
             'highlightEntitiesDocuments' => new \Twig_SimpleFilter('highlightEntitiesDocuments' , $this),
-            'highlightEntitiesDocumentsKeywords' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'highlightEntitiesAbstracts' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'highlightGenesAbstracts' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'highlightKeywordText' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'colorCodingScore' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'setCurationHtml' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'highlightRelations' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'getScoreToShow' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'getScoreToShowRelations' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
-            'getOrderToSource' => new \Twig_SimpleFilter('highlightEntitiesDocuments' ,$this),
+            'highlightEntitiesDocumentsKeywords' => new \Twig_SimpleFilter('highlightEntitiesDocumentsKeywords' ,$this),
+            'highlightEntitiesAbstracts' => new \Twig_SimpleFilter('highlightEntitiesAbstracts' ,$this),
+            'highlightGenesAbstracts' => new \Twig_SimpleFilter('highlightGenesAbstracts' ,$this),
+            'highlightKeywordText' => new \Twig_SimpleFilter('highlightKeywordText' ,$this),
+            'colorCodingScore' => new \Twig_SimpleFilter('colorCodingScore' ,$this),
+            'setCurationHtml' => new \Twig_SimpleFilter('setCurationHtml' ,$this),
+            'highlightRelations' => new \Twig_SimpleFilter('highlightRelations' ,$this),
+            'getScoreToShow' => new \Twig_SimpleFilter('getScoreToShow' ,$this),
+            'getScoreToShowRelations' => new \Twig_SimpleFilter('getScoreToShowRelations' ,$this),
+            'getOrderToSource' => new \Twig_SimpleFilter('getOrderToSource' ,$this),
             
         );
     }

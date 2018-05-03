@@ -148,7 +148,7 @@ fos_user:
 #Elasticsearch configuration
 fos_elastica:
     clients:
-        default: { host: limtox.cnio.es, port: 9204 }
+        default: { host: localhost, port: 9200 }
     indexes:
         etoxindex3:
             client: default

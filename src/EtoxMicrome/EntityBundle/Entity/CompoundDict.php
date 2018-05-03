@@ -31,7 +31,7 @@ class CompoundDict
     /**
      * @var string
      *
-     * @ORM\Column(name="chemIdPlus", type="string", length=500)
+     * @ORM\Column(name="""chemIdPlus""", type="string", length=500)
      */
     private $chemIdPlus;
 
@@ -45,56 +45,56 @@ class CompoundDict
     /**
      * @var string
      *
-     * @ORM\Column(name="casRegistryNumber", type="string", length=500)
+     * @ORM\Column(name="""casRegistryNumber""", type="string", length=500)
      */
     private $casRegistryNumber;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pubChemCompound", type="string", length=500)
+     * @ORM\Column(name="""pubChemCompound""", type="string", length=500)
      */
     private $pubChemCompound;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pubChemSubstance", type="string", length=500, nullable=true)
+     * @ORM\Column(name="""pubChemSubstance""", type="string", length=500, nullable=true)
      */
     private $pubChemSubstance;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="inChi", type="text", nullable=true)
+     * @ORM\Column(name="""inChi""", type="text", nullable=true)
      */
     private $inChi;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="drugBank", type="string", length=500, nullable=true)
+     * @ORM\Column(name="""drugBank""", type="string", length=500, nullable=true)
      */
     private $drugBank;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="humanMetabolome", type="string", length=500, nullable=true)
+     * @ORM\Column(name="""humanMetabolome""", type="string", length=500, nullable=true)
      */
     private $humanMetabolome;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="keggCompound", type="string", length=500, nullable=true)
+     * @ORM\Column(name="""keggCompound""", type="string", length=500, nullable=true)
      */
     private $keggCompound;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="keggDrug", type="string", length=500, nullable=true)
+     * @ORM\Column(name="""keggDrug""", type="string", length=500, nullable=true)
      */
     private $keggDrug;
 
@@ -108,7 +108,7 @@ class CompoundDict
     /**
      * @var integer
      *
-     * @ORM\Column(name="nrDbIds", type="integer", nullable=true)
+     * @ORM\Column(name="""nrDbIds""", type="integer", nullable=true)
      */
     private $nrDbIds;
 

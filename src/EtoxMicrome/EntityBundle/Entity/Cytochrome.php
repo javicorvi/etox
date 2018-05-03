@@ -24,7 +24,7 @@ class Cytochrome
     /**
      * @var string
      *
-     * @ORM\Column(name="""entityId""", type="string", length=255)
+     * @ORM\Column(name="entityId", type="string", length=255)
      */
     private $entityId;
 
@@ -66,7 +66,7 @@ class Cytochrome
     /**
      * @var float
      *
-     * @ORM\Column(name="""cypUniprotRanking""", type="float", nullable=true)
+     * @ORM\Column(name="cypUniprotRanking", type="float", nullable=true)
      */
     private $cypUniprotRanking;
 

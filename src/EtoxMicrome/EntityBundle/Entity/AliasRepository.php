@@ -23,9 +23,10 @@ class AliasRepository extends EntityRepository
         $query->setParameter('name', strtolower($name));
         //$alias=$query->getSingleResult();
         $alias=$query->getResult();
--       $aliases=$alias[0]->getAlias();
+        //$aliases='test';
+        //$aliases=$alias[0]->getAlias();
         //$aliases=$alias->getAlias();
         //We return all the Compounds with the InChI given.
-        return $aliases;
+        return $alias[0]->getAlias();
     }
 }

@@ -67,56 +67,56 @@ class Gene2Abstract
     /**
      * @var float
      *
-     * @ORM\Column(name="""patternCount""", type="float", nullable=true)
+     * @ORM\Column(name="patternCount", type="float", nullable=true)
      */
     private $patternCount;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="""ruleScore""", type="float", nullable=true)
+     * @ORM\Column(name="ruleScore", type="float", nullable=true)
      */
     private $ruleScore;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="""hepTermNormScore""", type="float", nullable=true)
+     * @ORM\Column(name="hepTermNormScore", type="float", nullable=true)
      */
     private $hepTermNormScore;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="""hepTermVarScore""", type="float", nullable=true)
+     * @ORM\Column(name="hepTermVarScore", type="float", nullable=true)
      */
     private $hepTermVarScore;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="""svmConfidence""", type="float", nullable=true)
+     * @ORM\Column(name="svmConfidence", type="float", nullable=true)
      */
     private $svmConfidence;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="""toxicology""", type="integer", nullable=true)
+     * @ORM\Column(name="toxicology", type="integer", nullable=true)
      */
     private $toxicology;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="""biomarker""", type="integer", nullable=true)
+     * @ORM\Column(name="biomarker", type="integer", nullable=true)
      */
     private $biomarker;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="""curation""", type="integer", nullable=true)
+     * @ORM\Column(name="curation", type="integer", nullable=true)
      */
     //private $curation;
 

@@ -38,7 +38,7 @@ class CompoundMesh
     /**
      * @var string
      *
-     * @ORM\Column(name="""meshUi""", type="string", length=255)
+     * @ORM\Column(name="meshUi", type="string", length=255)
      */
     private $meshUi;
 
