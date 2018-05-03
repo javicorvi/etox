@@ -6,13 +6,12 @@
     "autoload": {
         "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
     },
-	"require": {
+    "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.7.20",
         "doctrine/orm": "^2.4.8",
-        "doctrine/common": "2.8.1",
+        "doctrine/common": "2.6.1",
         "twig/extensions": "1.4.1",
-        "twig/twig": "1.30.0",
         "doctrine/doctrine-bundle": "~1.4",
         "symfony/assetic-bundle": "~2.3",
         "symfony/swiftmailer-bundle": "~2.3",
@@ -20,20 +19,21 @@
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "jms/security-extra-bundle": "dev-master",
-        "jms/serializer-bundle": "0.12.*",
-        "doctrine/data-fixtures" : "dev-master",
+        "jms/security-extra-bundle": "1.6.1",
+        "doctrine/data-fixtures" : "1.1.0",
         "doctrine/doctrine-fixtures-bundle": "2.3.0",
         "beberlei/doctrineextensions": "0.3.0",
         "raulfraile/ladybug-bundle": "~1.0",
         "ideup/simple-paginator-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "~1.1",
-        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "friendsofsymfony/user-bundle": "*",
         "friendsofsymfony/elastica-bundle": "*",
         "knplabs/knp-paginator-bundle": "~2.4",
         "sentry/sentry": "^1.5",
         "sentry/sentry-symfony": "^0.6.0",
-        "friendsofsymfony/rest-bundle": "^2.1"
+        "friendsofsymfony/rest-bundle": "^2.1",
+        "jms/serializer-bundle": "0.12.*"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",
@@ -62,7 +62,7 @@
      "config": {
         "bin-dir": "bin",
         "platform": {
-            "php": "7.1.16"
+            "php": "5.6.27"
         }
     },
     "extra": {
